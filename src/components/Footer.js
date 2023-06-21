@@ -1,7 +1,56 @@
 import React from 'react';
+//import logo
+import Logo from '../assets/img/chakra.png'
+
+import {footer} from '../data';
+import {address} from '../data';
 
 const Footer = () => {
-  return <div>Footer</div>;
+  return (
+    <footer className='section bg-primary text-white flex flex-col justify-between'>
+    <div className='container mx-auto flex flex-col h-full'>
+      <div className='flex flex-col lg:flex-row justify-between border-b-4 border-opacity-75 border-gray-700 pb-7 lg:pb-2 mb-10'>
+        <a href='#' className='flex items-center mb-6 lg:mb-0'>
+          <img src={Logo} alt='' className='w-8 h-auto lg:w-12 hover:rotate-180 transition-transform duration-500' />
+          <span className='ml-2 lg:text-2xl text-white text-xl font-bold'>Nalanda Industries</span>
+        </a>
+  
+        {/*social*/}
+        <div className='flex gap-x-4 text-white mb-6 lg:pl-10 lg:py-6'>
+          {footer.social.map((item, index) => {
+            return (
+              <div className='w-8 h-8 lg:w-12 lg:h-12 px-2 lg:py-4 text-2xl bg-gray-700 rounded-full hover:bg-accent flex justify-center items-center transition' key={index}>
+                <a href={item.href}>{item.icon}</a>
+              </div>
+            );
+          })}
+        </div>
+      </div>
+  
+      {/* Contact Details */}
+      <div className='flex justify-between items-center mt-2 lg:justify-end mb-12'>
+        <div className='text-white'>
+          {address.map((item, index) => (
+            <div key={index}>
+              <h4 className='font-bold'>{item.title}</h4>
+              <p className='whitespace-pre-line'>{item.subtitle}</p>
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
+  
+    {/* copyright text */}
+    <div className='bg-[rgba(147,28,28,0.88)] py-2'>
+      <p className='text-center text-white'>
+        &copy; Nalanda Industries 2023 - All rights reserved
+      </p>
+    </div>
+  </footer>
+  
+
+  
+  );
 };
 
 export default Footer;

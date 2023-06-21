@@ -72,6 +72,13 @@ export const hero = {
   buttonText: 'Our Products',
 };
 
+export const address=[
+{
+  title: 'Nalanda Industries',
+  subtitle: 'OCC, 1st Floor, New Ward No-20. \n Bangle School Lane, Ranchi \nJharkhand-834001'
+},
+];
+
 export const stats = [
   {
     icon: <FontAwesomeIcon icon="fa-solid fa-circle-check" style={{color: "#ffffff",}} />,
@@ -344,15 +351,11 @@ export const footer = {
     },
     {
       icon: <IoLogoInstagram />,
-      href: '#',
-    },
-    {
-      icon: <IoLogoGithub />,
-      href: '#',
+      href: 'https://instagram.com/nalanda_industries?igshid=Y2IzZGU1MTFhOQ==',
     },
     {
       icon: <IoLogoFacebook />,
-      href: '#',
+      href: 'https://www.facebook.com/profile.php?id=100092143891273',
     },
   ],
   copyright: 'Nalanda Industries-2023 - All Rights Reserved.',

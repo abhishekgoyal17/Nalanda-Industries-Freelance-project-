@@ -31,6 +31,15 @@ import Avatar1Img from './assets/img/avatar-1.png';
 import Avatar2Img from './assets/img/avatar-2.png';
 import Avatar3Img from './assets/img/avatar-3.png';
 import Avatar4Img from './assets/img/avatar-4.png';
+import { library } from '@fortawesome/fontawesome-svg-core';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+
+// Add the imported icons to the fontawesome library
+import { faCircleCheck, faArrowUpWideShort, faHandshake ,faDoorOpen} from '@fortawesome/free-solid-svg-icons';
+
+// Add the imported icons to the fontawesome library
+library.add({ faCircleCheck, faArrowUpWideShort, faHandshake,faDoorOpen });
+
 
 export const navigation = [
   {
@@ -42,8 +51,13 @@ export const navigation = [
     href: 'about',
   },
   {
-    name: 'features',
-    href: 'features',
+    name: 'products',
+    href: 'products',
+    dropdown:[
+      {name:'Item 1',href:'#'},
+      {name:'Item 1',href:'#'},
+      {name:'Item 1',href:'#'},
+    ],
   },
   {
     name: 'contact',
@@ -52,29 +66,30 @@ export const navigation = [
 ];
 
 export const hero = {
-  title: 'Creative Home Simpify your Furniture',
+  title: 'Open doors to Quality and Design with us',
   subtitle:
-    'Do i have consent to record this meeting gain locaion, root-and-branch, review, nor game plan who’s the goto',
-  buttonText: 'Shop Now',
+    'Nalanda Industries',
+  buttonText: 'Our Products',
 };
 
 export const stats = [
   {
-    value: '7',
-    text: 'Year Experience',
+    icon: <FontAwesomeIcon icon="fa-solid fa-circle-check" style={{color: "#ffffff",}} />,
+    text: 'High-quality',
   },
   {
-    value: '2',
-    text: 'Opened in the country',
+    icon: <FontAwesomeIcon icon="fa-solid fa-arrow-up-wide-short" />,
+    text: 'Wide selection',
   },
   {
-    value: '10k+',
-    text: 'Furniture sold',
+    icon:<FontAwesomeIcon icon="fa-solid fa-handshake" style={{color: "#ffffff",}} />,
+    text: 'Trusted',
   },
   {
-    value: '260+',
-    text: 'Variant Furniture',
+    icon:<FontAwesomeIcon icon="fa-solid fa-door-open" style={{color: "#ffffff",}} />,
+    text: 'Trendy',
   },
+  
 ];
 
 export const features = {
@@ -340,5 +355,5 @@ export const footer = {
       href: '#',
     },
   ],
-  copyright: 'FurniShop 2022 - All Rights Reserved.',
+  copyright: 'Nalanda Industries-2023 - All Rights Reserved.',
 };

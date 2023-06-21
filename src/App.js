@@ -3,7 +3,8 @@ import React from 'react';
 // import components
 import Hero from './components/Hero';
 import Header from './components/Header';
-import Footer from './components/Footer'
+import Footer from './components/Footer';
+import ContactPage from './components/ContactPage';
 
 
 
@@ -13,6 +14,7 @@ const App = () => {
      <Header/>
      <Hero/>
      <Footer/>
+     <ContactPage/>
      </div>);
 };
 

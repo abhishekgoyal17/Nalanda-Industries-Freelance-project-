@@ -34,6 +34,7 @@ import Avatar4Img from './assets/img/avatar-4.png';
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
+
 // Add the imported icons to the fontawesome library
 import { faCircleCheck, faArrowUpWideShort, faHandshake ,faDoorOpen} from '@fortawesome/free-solid-svg-icons';
 
@@ -44,15 +45,15 @@ library.add({ faCircleCheck, faArrowUpWideShort, faHandshake,faDoorOpen });
 export const navigation = [
   {
     name: 'home',
-    href: 'home',
+    href: '/',
   },
   {
     name: 'about',
-    href: 'about',
+    href: '/about',
   },
   {
     name: 'products',
-    href: 'products',
+    href: '/products',
     dropdown:[
       {name:'Item 1',href:'#'},
       {name:'Item 1',href:'#'},
@@ -61,7 +62,7 @@ export const navigation = [
   },
   {
     name: 'contact',
-    href: 'contact',
+    href: '/contact',
   },
 ];
 
@@ -75,7 +76,9 @@ export const hero = {
 export const address=[
 {
   title: 'Nalanda Industries',
-  subtitle: 'OCC, 1st Floor, New Ward No-20. \n Bangle School Lane, Ranchi \nJharkhand-834001'
+  subtitle: 'OCC, 1st Floor, New Ward No-20. \n Bangla School Lane, Ranchi \nJharkhand-834001',
+  number: '9835304050, 8210723798, 9379929680',
+  mail: 'nalanda.doors@gmail.com',
 },
 ];
 
@@ -101,22 +104,22 @@ export const stats = [
 
 export const features = {
   image: <Features1Img />,
-  title: 'We Create your home more aesthetic',
+  title: 'UPVC Windows and Doors',
   subtitle:
-    'Furniture power is a software as services for multipurpose business management system',
+    'Nalanda Industries is a renowned supplier of Yashpoly products,\n specializing in manufacturing, supplying, and exporting\n high-quality uPVC Windows and uPVC Sliding Windows',
   buttonText: 'Show Now',
   items: [
     {
       icon: <IoIosCheckmarkCircle />,
-      title: 'Valuation Services',
+      title: 'Climate-Resilient uPVC frames: Built for India',
       subtitle:
-        'Sometimes features require a short description.  This can be detailed description',
+        'With a deep understanding of the Indian climate, our UPVC Windows\n are designed to withstand extreme heat, cold, and heavy rainfall. ',
     },
     {
       icon: <IoIosCheckmarkCircle />,
-      title: 'Development of Furniture Models',
+      title: '""Excellence Guaranteed: Nalanda Industries - Yashpoly Supplier""',
       subtitle:
-        'Sometimes features require a short description.  This can be detailed description',
+        'At Nalanda Industries, we are committed to delivering top-notch quality and superior performance. Our Yashpoly products are crafted with precision and attention to detail,ensuring durability and reliability. ',
     },
   ],
   feature2: {

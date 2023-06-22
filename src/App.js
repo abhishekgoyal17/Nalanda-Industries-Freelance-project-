@@ -1,20 +1,26 @@
 import React from 'react';
+import {Route,Routes} from "react-router-dom";
 
 // import components
-import Hero from './components/Hero';
-import Header from './components/Header';
-import Footer from './components/Footer';
-import ContactPage from './components/ContactPage';
 
+import ContactPage from './routes/ContactPage';
+import Home from "./routes/Home";
+import About from './routes/About';
+import Products from './routes/Products';
 
 
 const App = () => {
   return(
      <div classname='w-full max-w-[1440px] mx-auto bg-white'>
-     <Header/>
-     <Hero/>
-     <Footer/>
-     <ContactPage/>
+     
+     <Routes>
+       <Route path ="/" element={<Home/>}/>
+       <Route path ="/contact" element={<ContactPage/>}/>
+       <Route path ="/about" element={<About/>}/>
+       <Route path ="/products" element={<Products/>}/>
+     </Routes>
+     
+     
      </div>);
 };
 

@@ -7,8 +7,8 @@ import {address} from '../data';
 
 const Footer = () => {
   return (
-    <footer className='section bg-primary text-white flex flex-col justify-between'>
-    <div className='container mx-auto flex flex-col h-full'>
+    <footer className='section bg-primary text-white -lg:pt-4 flex flex-col justify-between mt-60'>
+    <div className='container mx-auto flex flex-col h-80'>
       <div className='flex flex-col lg:flex-row justify-between border-b-4 border-opacity-75 border-gray-700 pb-7 lg:pb-2 mb-10'>
         <a href='#' className='flex items-center mb-6 lg:mb-0'>
           <img src={Logo} alt='' className='w-8 h-auto lg:w-12 hover:rotate-180 transition-transform duration-500' />
@@ -41,7 +41,7 @@ const Footer = () => {
     </div>
   
     {/* copyright text */}
-    <div className='bg-[rgba(147,28,28,0.88)] py-2'>
+    <div className='bg-[rgba(147,28,28,0.88)] py-0 lg:-mb-16 lg:mt-6 mt-6 -mb-12'>
       <p className='text-center text-white'>
         &copy; Nalanda Industries 2023 - All rights reserved
       </p>

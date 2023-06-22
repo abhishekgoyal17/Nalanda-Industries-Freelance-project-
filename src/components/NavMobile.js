@@ -1,4 +1,5 @@
 import React from 'react';
+import {Link} from 'react-router-dom';
 
 
 //import data
@@ -12,7 +13,7 @@ const NavMobile = () => {
     navigation.map((item,index)=>{
       return(
         <li key={index}>
-          <a className='text-xl font-medium capitalize' href={item.href}>{item.name}</a>
+          <Link className='text-xl font-medium capitalize' to={item.href}>{item.name}</Link>
         </li>
       );
     })}

@@ -29,11 +29,13 @@ module.exports = {
         white: '#fff',
         pink: 'pink',
       },
-      backgroundImage: {
-        hero: 'url("/src/assets/img/hero-bg.png")',
+      backgroundImage: (theme) => ({
+        hero1: 'url("/src/assets/hero-1.png")',
+        hero2: 'url("/src/assets/hero-2.png")',
+       
         newsletter: 'url("/src/assets/img/newsletter.png")',
         add: 'url("/src/assets/img/add-bg.png")',
-      },
+      }),
       dropShadow: {
         primary: '0px 4px 10px rgba(15, 27, 51, 0.05);',
       },

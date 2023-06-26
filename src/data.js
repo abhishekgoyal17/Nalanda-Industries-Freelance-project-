@@ -10,7 +10,14 @@ import {
 } from 'react-icons/io';
 
 // import images
-import Features1Img from './assets/img/features-1.png';
+import Yashpoly1 from './assets/img/yashpoly-1.png';
+import Yashpoly2 from './assets/img/yashpoly-2.png';
+import Yashpoly3 from './assets/img/yashpoly-3.png';
+import Yashpoly4 from './assets/img/yashpoly-4.png';
+import Yashpoly5 from './assets/img/yashpoly-5.png';
+import Yashpoly6 from './assets/img/yashpoly-6.png';
+import Yashpoly7 from './assets/img/yashpoly-7.png';
+import Yashpoly8 from './assets/img/yashpoly-8.png';
 import Features2Img from './assets/img/features-2.png';
 import ChairImg from './assets/img/chair.png';
 import BedImg from './assets/img/bed.png';
@@ -33,6 +40,7 @@ import Avatar3Img from './assets/img/avatar-3.png';
 import Avatar4Img from './assets/img/avatar-4.png';
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+
 
 
 // Add the imported icons to the fontawesome library
@@ -103,7 +111,40 @@ export const stats = [
 ];
 
 export const features = {
-  image: <Features1Img />,
+  images: [
+    {
+      image: Yashpoly1,
+      name: 'Yashpoly 1',
+    },
+    {
+      image: Yashpoly2,
+      name: 'Yashpoly 2',
+    },
+    {
+      image: Yashpoly3,
+      name: 'Yashpoly 3',
+    },
+    {
+      image: Yashpoly4,
+      name: 'Yashpoly 4',
+    },
+    {
+      image: Yashpoly5,
+      name: 'Yashpoly 5',
+    },
+    {
+      image: Yashpoly6,
+      name: 'Yashpoly 6',
+    },
+    {
+      image: Yashpoly7,
+      name: 'Yashpoly 7',
+    },
+    {
+      image: Yashpoly8,
+      name: 'Yashpoly 8',
+    },
+  ],
   title: 'UPVC Windows and Doors',
   subtitle:
     'Nalanda Industries is a renowned supplier of Yashpoly products,\n specializing in manufacturing, supplying, and exporting\n high-quality uPVC Windows and uPVC Sliding Windows',

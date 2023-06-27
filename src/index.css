@@ -15,10 +15,8 @@
   .subtitle {
     @apply text-[18px] lg:text-[20px] leading-relaxed mb-5 lg:mb-9;
   }
-}
+};
 
 
 
-  .animate-backgroundCarousel {
-    animation: backgroundCarousel 10s linear infinite;
-  }
+

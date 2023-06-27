@@ -30,9 +30,8 @@ module.exports = {
         pink: 'pink',
       },
       backgroundImage: (theme) => ({
-        hero1: 'url("/src/assets/hero-1.png")',
-        hero2: 'url("/src/assets/hero-2.png")',
-       
+        hero: 'url("/src/assets/img/hero1.png")',
+      
         newsletter: 'url("/src/assets/img/newsletter.png")',
         add: 'url("/src/assets/img/add-bg.png")',
       }),

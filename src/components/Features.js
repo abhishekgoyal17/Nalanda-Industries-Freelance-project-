@@ -1,6 +1,14 @@
 import React, { useState } from 'react';
 import { features } from '../data';
 import { IoIosArrowBack, IoIosArrowForward } from 'react-icons/io';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import SwiperCore, { Navigation, Pagination } from 'swiper';
+
+import 'swiper/css';
+import 'swiper/css/pagination';
+
+// Initialize Swiper core modules
+SwiperCore.use([Navigation, Pagination]);
 
 const Features = () => {
   const { title, subtitle, buttonText, items, images } = features;
@@ -20,30 +28,47 @@ const Features = () => {
 
   return (
     <section className='section'>
-      <div className='container mx-auto'>
+      <div className='container mx-auto lg:mb-6 lg:pb-4'>
         <div className='flex flex-col lg:flex-row lg:gap-x-6'>
-          {/* carousel */}
-          <div className='flex-1 order-1 lg:-order-1'>
-            <div className='carousel-wrapper'>
-              <img
-                src={images[currentImageIndex].image}
-                alt=''
-                className='carousel-image rounded-[40px] drop-shadow-2xl'
-                onClick={handleNext}
-                style={{ cursor: 'pointer', width: '500px', height: '400px' }}
-              />
-              <div className='carousel-arrows'>
-                <IoIosArrowBack className='carousel-arrow left' onClick={handlePrev} />
-                <IoIosArrowForward className='carousel-arrow right' onClick={handleNext} />
+          {/* Image Slider */}
+          <div className='lg:w-1/2 relative'>
+            <Swiper
+              slidesPerView={1}
+              navigation={{
+                prevEl: '.swiper-button-prev',
+                nextEl: '.swiper-button-next',
+              }}
+            >
+              {images.map((image, index) => (
+                <SwiperSlide key={index}>
+                  <div className='relative'>
+                     
+                    <img className='rounded-xl mb-6 w-[400px] lg:w-[500px]' src={image.image.type} alt='' />
+                    <div className='absolute bottom-0 items-center flex justify-center'>
+                   <div className='text-white bg-accent bg-cover text-3xl lg:text-3xl font-bold'>
+                        {image.name}
+                      </div>
+                   </div>
+                   
+                  </div>
+                 
+                </SwiperSlide>
+                
+              ))}
+              <div className='swiper-button-prev'>
+                <IoIosArrowBack  onClick={handlePrev} className='  text-4xl text-accent' />
               </div>
-              <div className='image-name'>{images[currentImageIndex].name}</div>
-            </div>
+              <div className='swiper-button-next  pb-8' >
+                <IoIosArrowForward  onClick={handleNext} className='text-4xl text-accent' />
+              </div>
+              
+            </Swiper>
           </div>
-          {/* text */}
-          <div className='whitespace-pre-line flex-1 flex-col justify-end'>
+
+          {/* Text Items */}
+          <div className='lg:w-1/2 lg:pl-4'>
             <h2 className='title text-3xl'>{title}</h2>
             <p className='subtitle'>{subtitle}</p>
-            {/* items */}
             <div className='whitespace-pre-line'>
               {items.map((item, index) => {
                 const { title, subtitle, icon } = item;
@@ -51,7 +76,7 @@ const Features = () => {
                   <div className='flex mb-6 lg:last:mb-0' key={index}>
                     <div className='text-2xl mr-4 lg:text-3xl'>{icon}</div>
                     <div>
-                      <h4 className='text-base lg:text-xl font-semibold mb-3'>{title}</h4>
+                      <h4 className='text-base lg:text-xl font-semibold mb-1'>{title}</h4>
                       <p>{subtitle}</p>
                     </div>
                   </div>

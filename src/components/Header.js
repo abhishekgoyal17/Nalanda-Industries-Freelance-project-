@@ -38,10 +38,10 @@ const Header = () => {
   });
 
 
-  return (<header className={`${bg ?'bg-accent py-2 lg:py-2':  'bg-none'} fixed left-0 py-2 w-full z-10 transition-all duration-200 mb-46 `}>
+  return (<header className={`${bg ?'bg-accent py-2 lg:py-2':  'bg-none'} fixed left-0 py-2 w-full z-10 transition-all  duration-200 mb-46 `}>
    <div className='container mx-auto '>
     <div className='flex justify-between items-center'>
-      {/*log*/}
+      {/*logo*/}
       <a href='#' className='flex items-center '>
         <img src={Logo} alt='' className='  w-10 h-auto lg:w-12 hover:rotate-180 transition-transform duration-500'/> <span className='m1-2 lg:text-2xl px-2 text-white text-xl font-bold'>Nalanda Industries</span>
       </a>

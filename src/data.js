@@ -20,6 +20,11 @@ import Yashpoly7 from './assets/img/yashpoly-7.png';
 import Yashpoly8 from './assets/img/yashpoly-8.png';
 import Features2Img from './assets/img/features-2.png';
 import ChairImg from './assets/img/chair.png';
+import Wpc1 from './assets/img/wpc1.png';
+import Wpc2 from './assets/img/wpc2.png';
+import Wpc3 from './assets/img/wpc3.png';
+import Wpc4 from './assets/img/wpc4.png';
+import Wpc5 from './assets/img/wpc5.png';
 import BedImg from './assets/img/bed.png';
 import CupboardImg from './assets/img/cupboard.png';
 import LightingImg from './assets/img/lighting.png';
@@ -113,36 +118,36 @@ export const stats = [
 export const features = {
   images: [
     {
-      image: Yashpoly1,
-      name: 'Yashpoly 1',
+      image: <Yashpoly1/>,
+      name: 'UPVC DOOR FRAMES',
     },
     {
-      image: Yashpoly2,
-      name: 'Yashpoly 2',
+      image: <Yashpoly2/>,
+      name: 'UPVC SLIDING DOORS',
     },
     {
-      image: Yashpoly3,
-      name: 'Yashpoly 3',
+      image: <Yashpoly3/>,
+      name: 'UPVC SLIDING WINDOWS',
     },
     {
-      image: Yashpoly4,
-      name: 'Yashpoly 4',
+      image: <Yashpoly4/>,
+      name: 'UPVC CASEMENT WINDOWS',
     },
     {
-      image: Yashpoly5,
-      name: 'Yashpoly 5',
+      image: <Yashpoly5/>,
+      name: 'UPVC COMBINATION WINDOWS',
     },
     {
-      image: Yashpoly6,
-      name: 'Yashpoly 6',
+      image: <Yashpoly6/>,
+      name: 'UPVC SPECIAL PURPOSE WINDOWS',
     },
     {
-      image: Yashpoly7,
-      name: 'Yashpoly 7',
+      image: <Yashpoly7/>,
+      name: 'UPVC FIXED WINDOWS',
     },
     {
-      image: Yashpoly8,
-      name: 'Yashpoly 8',
+      image: <Yashpoly8/>,
+      name: 'UPVC BAY WINDOWS',
     },
   ],
   title: 'UPVC Windows and Doors',
@@ -167,32 +172,36 @@ export const features = {
     image: <Features2Img />,
     title: 'The Best Furniture Manufacturer of your choice',
     subtitle:
-      'Furnitre power is a software as services for multiperpose business management system, expecially for them who are running two or more business exploree the future Furnitre power is a software as services.',
+      'Furniture power is a software as services for multiperpose business management system, expecially for them who are running two or more business exploree the future Furnitre power is a software as services.',
   },
 };
 
 export const newInStore = {
-  title: 'New In Store Now',
-  subtitle: 'Get the latest items immediately with promo prices',
-  link: 'Check all',
+  title: 'We manufacture',
+  subtitle: 'At Nalanda Industries, we are committed to delivering top-notch quality and superior performance. Our products are crafted with precision and attention to detail,ensuring durability and reliability.Best quality WPC Doors with huge range of designs',
+  link: 'Visit',
   icon: <IoIosArrowRoundForward />,
   products: [
     {
-      name: 'chair',
-      image: <ChairImg />,
+      name: 'wpc1',
+      image: <Wpc1 />,
     },
     {
-      name: 'bed',
-      image: <BedImg />,
+      name: 'wpc2',
+      image: <Wpc2 />,
     },
     {
-      name: 'cupboard',
-      image: <CupboardImg />,
+      name: 'wpc3',
+      image: <Wpc3 />,
     },
     {
-      name: 'lighting',
-      image: <LightingImg />,
+      name: 'wpc4',
+      image: <Wpc4/>,
     },
+    {
+      name:'wpc5',
+      image:<Wpc5/>
+    }
   ],
 };
 

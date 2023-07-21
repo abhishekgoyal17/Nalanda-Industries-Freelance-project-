@@ -6,7 +6,7 @@ const Hero = () => {
   const { title, subtitle, buttonText } = hero;
 
   return (
-    <section className='w-full h-[120px] bg-hero bg-right relative bg-cover bg-no-repeat text-white pt-[225px] pb-[120px]  mb-6 lg:bg-center lg:mb-6 ' >
+    <section className='w-full  mr-0 pr-0 h-[120px] bg-hero bg-right relative bg-cover bg-no-repeat text-white pt-[225px] pb-[120px]  mb-6 lg:bg-center lg:mb-6 ' >
       <div className='container mx-auto underline-offset-5 text-center'>
         <h1 className='ring-offset-2 ring-offset-[rgba(147, 28, 28)] text-xl mx-auto bg-accent rounded-md font-semibold -mt-[80px] mb-[30px] lg:text-[25px] lg:leading-tight lg:max-w-[888px] text-shadow drop-shadow-lg hover:drop-shadow-3xl'>
           {title}

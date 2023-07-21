@@ -11,7 +11,7 @@ import Products from './routes/Products';
 
 const App = () => {
   return(
-     <div classname='w-full max-w-[1440px] mx-auto bg-white'>
+     <div classname='w-full max-w-[1440px]    mx-auto bg-white'>
      
      <Routes>
        <Route path ="/" element={<Home/>}/>

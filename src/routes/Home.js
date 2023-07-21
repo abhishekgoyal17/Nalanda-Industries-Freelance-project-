@@ -13,7 +13,6 @@ const Home = () => {
       <Hero/>
       <NewItems/>
       <Features/>
-      
       <Footer/>
     
       

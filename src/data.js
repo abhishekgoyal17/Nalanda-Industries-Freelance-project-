@@ -68,9 +68,9 @@ export const navigation = [
     name: 'products',
     href: '/products',
     dropdown:[
-      {name:'Item 1',href:'#'},
-      {name:'Item 1',href:'#'},
-      {name:'Item 1',href:'#'},
+      {name:'Ekotimber',href:'/ekotimber'},
+      {name:'Yashpoly',href:'/yashpoly-products'},
+      {name:'WPC Doors',href:'wpc-doors'},
     ],
   },
   {

@@ -18,6 +18,11 @@ import Yashpoly5 from './assets/img/yashpoly-5.png';
 import Yashpoly6 from './assets/img/yashpoly-6.png';
 import Yashpoly7 from './assets/img/yashpoly-7.png';
 import Yashpoly8 from './assets/img/yashpoly-8.png';
+import SlidingWindowImg from './assets/img/products/sliding-window.jpg';
+import CornerglassImg from './assets/img/products/corner-glass-to-glass-windows.jpg';
+import BalconyGrillImg from './assets/img/products/balcony-windows-with-grill.jpg';
+import WallsImg from './assets/img/products/upvc-walls.jpg';
+
 import Features2Img from './assets/img/features-2.png';
 import ChairImg from './assets/img/chair.png';
 import Wpc1 from './assets/img/wpc1.png';
@@ -94,6 +99,8 @@ export const address=[
   mail: 'nalanda.doors@gmail.com',
 },
 ];
+
+
 
 export const stats = [
   {
@@ -413,3 +420,49 @@ export const footer = {
   ],
   copyright: 'Nalanda Industries-2023 - All Rights Reserved.',
 };
+
+
+export const yashPolyPage={
+   yashPolyProd:[
+    {
+      image: <SlidingWindowImg/>,
+      name: 'UPVC Sliding Windows',
+    },
+    {
+      image: <Yashpoly2/>,
+      name: 'UPVC SLIDING DOORS',
+    },
+    {
+      image: <CornerglassImg/>,
+      name: 'UPVC Corner Glass WINDOWS',
+    },
+    {
+      image: <Yashpoly4/>,
+      name: 'UPVC CASEMENT WINDOWS',
+    },
+    {
+      image: <Yashpoly5/>,
+      name: 'UPVC COMBINATION WINDOWS',
+    },
+    {
+      image: <Yashpoly6/>,
+      name: 'UPVC SPECIAL PURPOSE WINDOWS',
+    },
+    {
+      image: <Yashpoly7/>,
+      name: 'UPVC FIXED WINDOWS',
+    },
+    {
+      image: <Yashpoly8/>,
+      name: 'UPVC BAY WINDOWS',
+    },
+    {
+      image:<BalconyGrillImg/>,
+      name: 'Balcony Windows with Grill ',
+    },{
+      image:<WallsImg/>,
+      name:'UPVC WALLS'
+    }
+   ]
+
+}

@@ -2,10 +2,10 @@ import React from 'react';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import YashpolyProd from '../components/YashpolyProd';
+import YashpolyAdvantage from '../components/YashpolyAdvantage';
 
 
-
-const About = () => {
+const Yashpoly = () => {
 return (
     <div>
       <Header />
@@ -22,6 +22,7 @@ return (
   
 </div>
 <YashpolyProd/>
+<YashpolyAdvantage/>
 
 
       <Footer/>
@@ -30,4 +31,4 @@ return (
       );};
 
 
-      export default About;
+      export default Yashpoly;

@@ -89,6 +89,7 @@ export const hero = {
   subtitle:
     'Nalanda Industries',
   buttonText: 'Our Products',
+  href: '/products'
 };
 
 export const address=[

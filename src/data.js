@@ -56,6 +56,28 @@ import Avatar1Img from './assets/img/avatar-1.png';
 import Avatar2Img from './assets/img/avatar-2.png';
 import Avatar3Img from './assets/img/avatar-3.png';
 import Avatar4Img from './assets/img/avatar-4.png';
+import Majestic1 from './assets/img/ekotimber-majestic/majestic-1.png';
+import Majestic2 from './assets/img/ekotimber-majestic/majestic-2.png';
+import Majestic3 from './assets/img/ekotimber-majestic/majestic-3.png';
+import Majestic4 from './assets/img/ekotimber-majestic/majestic-4.png';
+import Majestic5 from './assets/img/ekotimber-majestic/majestic-5.png';
+import Majestic6 from './assets/img/ekotimber-majestic/majestic-6.png';
+import Majestic7 from './assets/img/ekotimber-majestic/majestic-7.png';
+import Majestic8 from './assets/img/ekotimber-majestic/majestic-8.png';
+import Majestic9 from './assets/img/ekotimber-majestic/majestic-9.png';
+import Majestic10 from './assets/img/ekotimber-majestic/majestic-10.png'
+import Majestic11 from './assets/img/ekotimber-majestic/majestic-11.png'
+import Majestic12 from './assets/img/ekotimber-majestic/majestic-12.png'
+
+
+
+
+
+
+
+
+
+
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
@@ -511,6 +533,59 @@ export const ekotimberPage = {
       title: 'Waterproof',
     },
   ],
+};
+
+export const ekotimberMajestic= {
+    majesticDoors: [
+      {
+     majesticDoor:[
+      {
+        image:<Majestic1/>
+      },
+      {
+        image:<Majestic2/>
+      },
+      {
+        image:<Majestic3/>
+      },
+      {
+        image:<Majestic4/>
+      },
+    ]
+  },
+  {
+    majesticDoor:[
+      {
+        image:<Majestic5/>
+      },
+      {
+        image:<Majestic6/>
+      },
+      {
+        image:<Majestic7/>
+      },
+      {
+        image:<Majestic8/>
+      },
+    ],
+  },
+  {
+    majesticDoor:[
+      {
+        image:<Majestic9/>
+      },
+      {
+        image:<Majestic10/>
+      },
+      {
+        image:<Majestic11/>
+      },
+      {
+        image:<Majestic12/>
+      },
+    ],
+  },
+],
 };
 
 

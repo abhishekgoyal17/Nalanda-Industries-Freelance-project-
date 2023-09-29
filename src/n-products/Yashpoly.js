@@ -13,8 +13,8 @@ return (
       <img
           src={YashpolyLogo} // Use the Yashpoly logo image here
           alt='Yashpoly Logo'
-          className='mx-auto mb-2 rounded  bg-white  shadow-xl p-6'
-          style={{ width: '300px', height: 'auto' }} // Adjust the width and height as needed
+          className='mx-auto mb-2 rounded border-black mt-16 bg-white  shadow-xl p-6'
+          style={{ width: '450px', height: 'auto' }} // Adjust the width and height as needed
         />
         
       </div>

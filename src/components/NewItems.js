@@ -18,11 +18,11 @@ const NewItemsSlider = () => {
 
   return (
     <div className="lg:w-1/2 relative mr-8">
-      <div className="border rounded-lg ">
+      <div className=" rounded-lg ">
         <div className="flex justify-between mr-2 w-[700px]">
           {newInStore.products.slice(startIndex, startIndex + productsPerSlide).map((product, index) => (
             <div className="w-[60%] p-1" key={index}>
-              <div className="border rounded-lg p-2 hover:shadow-lg transition duration-300">
+              <div className="border rounded-lg  m-2 p-2 hover:shadow-lg transition duration-300">
                 <img
                   className="rounded-lg max-h-[200px] lg:max-h-[500px] w-full mb-2 transform transition-transform hover:scale-105"
                   src={product.image.type}

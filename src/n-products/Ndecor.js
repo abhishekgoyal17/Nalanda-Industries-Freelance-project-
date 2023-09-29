@@ -12,8 +12,8 @@ return (
       <img
           src={NdecorLogo} // Use the Yashpoly logo image here
           alt='Ekotimber logo'
-          className='mx-auto rounded bg-white mb-6 shadow-xl'
-          style={{ width: '150px', height: 'auto' }} // Adjust the width and height as needed
+          className='mx-auto rounded border border-white mb-6 shadow-xl'
+          style={{ width: '280px', height: 'auto' }} // Adjust the width and height as needed
         />
       </div>
       <Footer/></div>

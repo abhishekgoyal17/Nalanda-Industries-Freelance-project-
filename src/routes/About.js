@@ -8,9 +8,10 @@ const About = () => {
     <div>
       <Header />
 
-      <div className="h-[225px] w-full bg-gradient-to-r from-green-700 bg-accent text-white pt-[125px] pb-[145px] relative mb-12 lg:mb-28">
+      <div className="h-[225px] w-full bg-add  text-white pt-[125px] pb-[145px] relative mb-24 lg:mb-28">
         <h1 className="text-4xl font-bold text-center">About Us</h1>
-      </div>
+        </div>
+
 
       {/* Add your logo image here */}
       <img src={NalandaLogo} alt="Nalanda Logo" className="mx-auto my-4 w-[400px]" />
@@ -44,6 +45,7 @@ const About = () => {
       
       <Footer />
     </div>
+    
   );
 };
 

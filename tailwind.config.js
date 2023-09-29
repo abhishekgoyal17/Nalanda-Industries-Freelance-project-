@@ -20,7 +20,7 @@ module.exports = {
     extend: {
       colors: {
         primary: '#23262F',
-        accent: '#286F6C',
+        accent: '#15615e',
         grey: {
           DEFAULT: '#919297',
           1: '#D9D9D9',
@@ -31,10 +31,11 @@ module.exports = {
         pink: 'pink',
       },
       backgroundImage: (theme) => ({
-        hero: 'url("/src/assets/img/hero1.png")',
+        hero: 'url("/src/assets/img/door-graphics-2.jpg")',
       
         newsletter: 'url("/src/assets/img/newsletter.png")',
         add: 'url("/src/assets/img/add-bg.png")',
+        
       }),
       dropShadow: {
         primary: '0px 4px 10px rgba(15, 27, 51, 0.05);',

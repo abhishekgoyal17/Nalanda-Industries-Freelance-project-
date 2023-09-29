@@ -7,7 +7,7 @@ import {address} from '../data';
 
 const Footer = () => {
   return (
-    <footer className='section bg-primary text-white -lg:pt-4 flex flex-col justify-between mt-60'>
+    <footer className='section bg-gray-800 text-white -lg:pt-4 flex flex-col justify-between mt-60'>
     <div className='container mx-auto flex flex-col h-80'>
       <div className='flex flex-col lg:flex-row justify-between border-b-4 border-opacity-75 border-gray-700 pb-7 lg:pb-2 mb-10'>
         <a href='#' className='flex items-center mb-6 lg:mb-0'>
@@ -19,7 +19,7 @@ const Footer = () => {
         <div className='flex gap-x-4 text-white mb-6 lg:pl-10 lg:py-6'>
           {footer.social.map((item, index) => {
             return (
-              <div className='w-8 h-8 lg:w-12 lg:h-12 px-2 lg:py-4 text-2xl bg-gray-700 rounded-full hover:bg-gradient-to-r from-green-600 bg-accent flex justify-center items-center transition' key={index}>
+              <div className='w-8 h-8 lg:w-12 lg:h-12 px-2 lg:py-4 text-2xl bg-gray-700 rounded-full hover:bg-gradient-to-r from-green-700 bg-accent flex justify-center items-center transition' key={index}>
                 <a href={item.href}>{item.icon}</a>
               </div>
             );

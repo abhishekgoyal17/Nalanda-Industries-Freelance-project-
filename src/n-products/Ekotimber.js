@@ -8,6 +8,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import SwiperCore, { Navigation, Pagination } from 'swiper';
 import { IoIosArrowBack, IoIosArrowForward } from 'react-icons/io';
 import EkotTimberProp from '../components/prop-ekotimber';
+import EkotimberMajestic from '../components/ekotimber-majestic';
 // Initialize Swiper core modules
 SwiperCore.use([Navigation, Pagination]);
 const Ekotimber = () => {
@@ -18,8 +19,8 @@ const Ekotimber = () => {
       <img
           src={EkoTimberLogo} // Use the Yashpoly logo image here
           alt='Ekotimber logo'
-          className='mx-auto mb-2 rounded  bg-white  shadow-xl p-6'
-          style={{ width: '300px', height: 'auto' }} // Adjust the width and height as needed
+          className='mx-auto mb-2 rounded mt-8 border-black  bg-white  shadow-xl p-6'
+          style={{ width: '420px', height: 'auto' }} // Adjust the width and height as needed
         />
       </div>
 
@@ -30,6 +31,7 @@ const Ekotimber = () => {
           EKOTimber Wood Plastic Composite or EKOTimber WPC is a material that is made by integrating thermoplastics with wood flour. It is an ideal material for fabricating products that look great and function well without harming the environment in any way.
         </p>
       </div>
+      <EkotimberMajestic/>
       <EkotTimberProp/>
       {/* Benefits Card */}
       <div className='max-w-[1200px] mx-auto flex items-center bg-white rounded-lg  mt-20 shadow-lg p-10'>
@@ -57,9 +59,8 @@ const Ekotimber = () => {
         
       </div>
       
-      // ...
-
-
+    
+   
       <Footer />
     </div>
   );

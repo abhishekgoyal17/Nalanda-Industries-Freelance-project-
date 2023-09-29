@@ -38,7 +38,7 @@ const Header = () => {
   });
 
 
-  return (<header className={`${bg ?'bg-gradient-to-l from-green-600 bg-accent py-2 lg:py-2':  'bg-none'} fixed left-0 py-2 w-full z-10 transition-all  duration-200 mb-46 `}>
+  return (<header className={`${bg ?'bg-gradient-to-r from-green-700 bg-accent py-2 lg:py-2':  'bg-none'} fixed left-0 py-2 w-full z-10 transition-all  duration-200 mb-46 `}>
    <div className='container mx-auto '>
     <div className='flex justify-between items-center'>
       {/*logo*/}

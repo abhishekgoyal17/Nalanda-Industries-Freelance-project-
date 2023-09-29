@@ -3,14 +3,20 @@ import Header from '../components/Header';
 import Footer from '../components/Footer';
 import YashpolyProd from '../components/YashpolyProd';
 import YashpolyAdvantage from '../components/YashpolyAdvantage';
-
+import YashpolyLogo from '../assets/img/yashpoly-logo.png';
 
 const Yashpoly = () => {
 return (
     <div>
       <Header />
       <div className='h-[225px] w-full bg-add bg-center bg-cover bg-no-repeat text-white pt-[125px] pb-[145px] relative mb-12 lg:bg-center lg:mb-28'>
-        <h1 className='text-6xl font-bold text-white text-center'>Yashpoly</h1>
+      <img
+          src={YashpolyLogo} // Use the Yashpoly logo image here
+          alt='Yashpoly Logo'
+          className='mx-auto mb-2 rounded  bg-white  shadow-xl p-6'
+          style={{ width: '300px', height: 'auto' }} // Adjust the width and height as needed
+        />
+        
       </div>
       
       

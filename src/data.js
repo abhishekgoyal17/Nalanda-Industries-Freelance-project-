@@ -22,7 +22,15 @@ import SlidingWindowImg from './assets/img/products/sliding-window.jpg';
 import CornerglassImg from './assets/img/products/corner-glass-to-glass-windows.jpg';
 import BalconyGrillImg from './assets/img/products/balcony-windows-with-grill.jpg';
 import WallsImg from './assets/img/products/upvc-walls.jpg';
-
+import EcoFriendly from './assets/img/prop-ekotimber/Eco-Friendly.png';
+import FastInstallation from './assets/img/prop-ekotimber/Fast-Installation.png';
+import FireRetardant from './assets/img/prop-ekotimber/Fire-retardant.png';
+import NoBend from './assets/img/prop-ekotimber/No-bend-and-warp.png';
+import NoMaintanance from './assets/img/prop-ekotimber/No-Maintanance.png';
+import Termiteproof from './assets/img/prop-ekotimber/Termite-proof.png';
+import Universal from './assets/img/prop-ekotimber/Universal-Recycling-100.png';
+import Waterproof from './assets/img/prop-ekotimber/Waterproof.png';
+import nDecorLogo from './assets/img/n-decor-logo.png';
 import Features2Img from './assets/img/features-2.png';
 import ChairImg from './assets/img/chair.png';
 import Wpc1 from './assets/img/wpc1.png';
@@ -75,7 +83,7 @@ export const navigation = [
     dropdown:[
       {name:'Ekotimber',href:'/ekotimber'},
       {name:'Yashpoly',href:'/yashpoly-products'},
-      {name:'WPC Doors',href:'wpc-doors'},
+      {name:'N-Decor',href:'wpc-doors'},
     ],
   },
   {
@@ -466,4 +474,46 @@ export const yashPolyPage={
     }
    ]
 
-}
+};
+
+export const ekotimberPage = {
+  ekotimberAdvantages: [
+    {
+      image: <EcoFriendly/>,
+      title: 'Eco-Friendly',
+    },
+    {
+      image: <FastInstallation/>,
+      title: 'Fast Installation',
+    },
+    {
+      image: <FireRetardant/>,
+      title: 'Fire Retardant',
+    },
+    {
+      image: <NoBend/>,
+      title: 'No Bend and Wrap',
+    },
+    {
+      image: <NoMaintanance/>,
+      title: 'No Maintenance',
+    },
+    {
+      image: <Termiteproof/>,
+      title: 'Termite-Proof',
+    },
+    {
+      image: <Universal/>,
+      title: 'Universal Recycling (100%)',
+    },
+    {
+      image: <Waterproof/>,
+      title: 'Waterproof',
+    },
+  ],
+};
+
+
+
+
+

@@ -1,34 +1,23 @@
 import React, { useState } from 'react';
 import { features } from '../data';
 import { IoIosArrowBack, IoIosArrowForward } from 'react-icons/io';
-import { Swiper, SwiperSlide } from 'swiper/react';
-import SwiperCore, { Navigation, Pagination } from 'swiper';
-
-import 'swiper/css';
-import 'swiper/css/pagination';
-
-// Initialize Swiper core modules
-SwiperCore.use([Navigation, Pagination]);
 
 const Features = () => {
-  const { title, subtitle, buttonText, items, images } = features;
-  const [currentImageIndex, setCurrentImageIndex] = useState(0);
+  const { title, subtitle, items, images } = features;
+  const [startIndex, setStartIndex] = useState(0);
+  const imagesPerRow = 1; // Display one image at a time
 
-  const handleClick = (index) => {
-    setCurrentImageIndex(index);
+  const handleNext = () => {
+    setStartIndex((prevIndex) => Math.min(prevIndex + imagesPerRow, images.length - imagesPerRow));
   };
 
   const handlePrev = () => {
-    setCurrentImageIndex((prevIndex) => (prevIndex === 0 ? images.length - 1 : prevIndex - 1));
-  };
-
-  const handleNext = () => {
-    setCurrentImageIndex((prevIndex) => (prevIndex + 1) % images.length);
+    setStartIndex((prevIndex) => Math.max(prevIndex - imagesPerRow, 0));
   };
 
   return (
     <section className='section'>
-      <div className='container mx-auto lg:mb-6 lg:pb-4'>
+      <div className='container mx-auto lg:mb-6 lg:pb-2'>
         <div className='flex flex-col lg:flex-row lg:max-w-screen-xl mx-auto'>
           {/* Text Items */}
           <div className='lg:w-1/2 lg:pl-4'>
@@ -51,33 +40,25 @@ const Features = () => {
           </div>
 
           {/* Image Slider */}
-          <div className='lg:w-1/2 relative'>
-            <Swiper
-              slidesPerView={1}
-              navigation={{
-                prevEl: '.swiper-button-prev',
-                nextEl: '.swiper-button-next',
-              }}
-            >
-              {images.map((image, index) => (
-                <SwiperSlide key={index}>
-                  <div className='relative'>
-                    <img className='rounded-xl mb-6 w-full h-auto' src={image.image.type} alt='' />
-                    <div className='absolute bottom-0 items-center flex justify-center'>
-                      <div className='text-white bg-accent bg-cover text-3xl lg:text-3xl font-bold'>
-                        {image.name}
-                      </div>
-                    </div>
-                  </div>
-                </SwiperSlide>
-              ))}
-              <div className='swiper-button-prev'>
-                <IoIosArrowBack onClick={handlePrev} className='text-4xl text-accent' />
+          <div className='lg:w-1/2 relative ml-12'>
+            <div className='border rounded-lg ml-6 p-4'>
+              <img
+                className='rounded-lg  pl-2 max-h-[400px] lg:max-h-[400px] w-full mb-2 transform transition-transform hover:scale-105'
+                src={images[startIndex].image.type}
+                alt=''
+              />
+              <div className='text-center text-md font-medium text-gray-700 capitalize'>
+                {images[startIndex].name}
               </div>
-              <div className='swiper-button-next pb-8'>
-                <IoIosArrowForward onClick={handleNext} className='text-4xl text-accent' />
-              </div>
-            </Swiper>
+            </div>
+            <div className='flex justify-center mt-4'>
+              <button className='mr-2' onClick={handlePrev}>
+                <IoIosArrowBack className='text-4xl text-accent' />
+              </button>
+              <button onClick={handleNext}>
+                <IoIosArrowForward className='text-4xl text-accent' />
+              </button>
+            </div>
           </div>
         </div>
       </div>

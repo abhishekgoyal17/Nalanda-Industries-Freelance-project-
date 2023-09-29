@@ -35,8 +35,8 @@ const AdvantagesCarousel = () => {
   };
 
   return (
-    <div className="max-w-[1200px] mx-auto mt-8 relative bg-accent p-4 rounded-lg">
-      <h2 className="text-2xl font-bold mb-4 text-white text-center">Advantages</h2>
+    <div className="max-w-[1200px] mx-auto mt-8 relative bg-gradient-to-l from-green-700 bg-accent p-4 rounded-lg">
+      <h2 className="text-4xl font-bold mb-4 text-white text-center">Advantages</h2>
       <div className="overflow-hidden">
         <div className="flex items-center justify-center">
           <button
@@ -46,13 +46,13 @@ const AdvantagesCarousel = () => {
             &lt;
           </button>
           <ul
-            className="w-full flex transition-transform duration-500 ease-in-out"
+            className="w-full flex  transition-transform duration-1000 ease-in-out"
             style={{ transform: `translateX(-${currentIndex * (100 / advantages.length)}%)` }}
           >
             {advantages.map((advantage, index) => (
               <li
                 key={index}
-                className={`w-[calc(33.3333% - 2rem)] flex-shrink-0 flex flex-col items-center justify-center px-4 py-6 text-center text-black bg-white border rounded-lg m-2`}
+                className={`w-[calc(33.3333% - 2rem)] shadow-md flex-shrink-0 flex flex-col items-center justify-center px-4 py-6 text-center text-black bg-white border rounded-lg m-2`}
               >
                 {advantage}
               </li>
@@ -65,7 +65,7 @@ const AdvantagesCarousel = () => {
             </li>
           </ul>
           <button
-            className="p-2 rounded-full bg-gray-300 text-gray-700 hover:bg-gray-400 focus:outline-none"
+            className="p-2 rounded-full bg-gray-300 text-gray-700 hover:bg-gray-400"
             onClick={handleNext}
           >
             &gt;

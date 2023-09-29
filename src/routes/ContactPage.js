@@ -30,7 +30,7 @@ const ContactPage = () => {
    
      
       <p className='text-xl text-gray-800 mb-2'>Contact:  {number}</p>
-      <a href={`mailto:${mail}`} className='lg:text-xl text-lg lg:mt-6 bg-accent text-white hover:Yellow'>
+      <a href={`mailto:${mail}`} className='lg:text-xl text-lg lg:mt-6 bg-gradient-to-r from-green-600 bg-accent text-white hover:Yellow'>
         
         <span className=''>Mail: {mail}</span>
       </a>

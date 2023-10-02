@@ -9,6 +9,7 @@ import SwiperCore, { Navigation, Pagination } from 'swiper';
 import { IoIosArrowBack, IoIosArrowForward } from 'react-icons/io';
 import EkotTimberProp from '../components/prop-ekotimber';
 import EkotimberMajestic from '../components/ekotimber-majestic';
+import EkotimberClay from '../components/ekotimber-clay';
 // Initialize Swiper core modules
 SwiperCore.use([Navigation, Pagination]);
 const Ekotimber = () => {
@@ -25,16 +26,18 @@ const Ekotimber = () => {
       </div>
 
       {/* Intro Card */}
-      <div className='max-w-[1200px] mx-auto p-8 bg-white rounded-lg shadow-lg mb-8'>
-        <h2 className='text-4xl font-bold mb-4 text-center text-accent'>What is EKOTimber WPC ?</h2>
+      <div className='max-w-[1200px] mx-auto p-8 bg-white rounded-xl shadow-lg mb-8'>
+        <h2 className='text-4xl font-bold mb-4 drop-shadow-sm hover:drop-shadow-md text-center text-accent'>What is EKOTimber WPC ?</h2>
         <p className='text-center text-xl'>
           EKOTimber Wood Plastic Composite or EKOTimber WPC is a material that is made by integrating thermoplastics with wood flour. It is an ideal material for fabricating products that look great and function well without harming the environment in any way.
         </p>
       </div>
       <EkotimberMajestic/>
-      <EkotTimberProp/>
+      <div className=""><EkotTimberProp/></div>
+      
+      <EkotimberClay/>
       {/* Benefits Card */}
-      <div className='max-w-[1200px] mx-auto flex items-center bg-white rounded-lg  mt-20 shadow-lg p-10'>
+      <div className='max-w-[1200px]  mx-auto flex items-center bg-white rounded-lg  mt-20 shadow-lg p-10'>
         {/* Left Side (Image) */}
         <div className='w-[40%] pr-8'>
           <img
@@ -46,7 +49,7 @@ const Ekotimber = () => {
         
         {/* Right Side (Text) */}
         <div className='pl-6 w-[50%]'>
-          <h2 className='text-3xl font-bold mb-4 text-accent'>Why Should You Choose EKOTimber</h2>
+          <h2 className='text-3xl font-bold mb-4 drop-shadow-lg text-accent'>Why Should You Choose EKOTimber</h2>
           <ul className='list-disc pl-6 text-xl'>
             <li>It has better physical properties</li>
             <li>It is 100% recyclable</li>

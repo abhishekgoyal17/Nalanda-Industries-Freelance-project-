@@ -32,10 +32,11 @@ module.exports = {
       },
       backgroundImage: (theme) => ({
         hero: 'url("/src/assets/img/door-graphics-2.jpg")',
-      
+        door: 'url("/src/assets/img/door-graphics-1.jpg")',
         newsletter: 'url("/src/assets/img/newsletter.png")',
         add: 'url("/src/assets/img/add-bg.png")',
-        
+        mission: 'url("/src/assets/img/door-graphics-4.jpg")',
+        AboutNalanda:'url("/src/assets/img/window-graphics-1.jpg")',
       }),
       dropShadow: {
         primary: '0px 4px 10px rgba(15, 27, 51, 0.05);',

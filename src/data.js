@@ -65,17 +65,21 @@ import Majestic6 from './assets/img/ekotimber-majestic/majestic-6.png';
 import Majestic7 from './assets/img/ekotimber-majestic/majestic-7.png';
 import Majestic8 from './assets/img/ekotimber-majestic/majestic-8.png';
 import Majestic9 from './assets/img/ekotimber-majestic/majestic-9.png';
-import Majestic10 from './assets/img/ekotimber-majestic/majestic-10.png'
-import Majestic11 from './assets/img/ekotimber-majestic/majestic-11.png'
-import Majestic12 from './assets/img/ekotimber-majestic/majestic-12.png'
-
-
-
-
-
-
-
-
+import Majestic10 from './assets/img/ekotimber-majestic/majestic-10.png';
+import Majestic11 from './assets/img/ekotimber-majestic/majestic-11.png';
+import Majestic12 from './assets/img/ekotimber-majestic/majestic-12.png';
+import Majestic13 from './assets/img/ekotimber-majestic/majestic-12.png';
+import Majestic14 from './assets/img/ekotimber-majestic/majestic-12.png';
+import Majestic15 from './assets/img/ekotimber-majestic/majestic-12.png';
+import Majestic16 from './assets/img/ekotimber-majestic/majestic-12.png';
+import Majestic17 from './assets/img/ekotimber-majestic/majestic-12.png';
+import Majestic18 from './assets/img/ekotimber-majestic/majestic-12.png';
+import Majestic19 from './assets/img/ekotimber-majestic/majestic-12.png';
+import Majestic20 from './assets/img/ekotimber-majestic/majestic-12.png';
+import Majestic21 from './assets/img/ekotimber-majestic/majestic-12.png';
+import Majestic22 from './assets/img/ekotimber-majestic/majestic-12.png';
+import Majestic23 from './assets/img/ekotimber-majestic/majestic-12.png';
+import Majestic24 from './assets/img/ekotimber-majestic/majestic-12.png';
 
 
 import { library } from '@fortawesome/fontawesome-svg-core';
@@ -526,7 +530,7 @@ export const ekotimberPage = {
     },
     {
       image: <Universal/>,
-      title: 'Universal Recycling (100%)',
+      title: 'Universal Recycling',
     },
     {
       image: <Waterproof/>,
@@ -551,10 +555,6 @@ export const ekotimberMajestic= {
       {
         image:<Majestic4/>
       },
-    ]
-  },
-  {
-    majesticDoor:[
       {
         image:<Majestic5/>
       },
@@ -567,10 +567,11 @@ export const ekotimberMajestic= {
       {
         image:<Majestic8/>
       },
-    ],
+    ]
   },
   {
     majesticDoor:[
+      
       {
         image:<Majestic9/>
       },
@@ -583,12 +584,50 @@ export const ekotimberMajestic= {
       {
         image:<Majestic12/>
       },
+      {
+        image:<Majestic13/>
+      },
+      {
+        image:<Majestic14/>
+      },
+      {
+        image:<Majestic23/>
+      },
+      {
+        image:<Majestic24/>
+      },
+    ],
+  },
+  {
+    majesticDoor:[
+      
+      {
+        image:<Majestic15/>
+      },
+      {
+        image:<Majestic16/>
+      },
+      {
+        image:<Majestic17/>
+      },
+      {
+        image:<Majestic18/>
+      },
+      {
+        image:<Majestic19/>
+      },
+      {
+        image:<Majestic20/>
+      },
+      {
+        image:<Majestic21/>
+      },
+      {
+        image:<Majestic22/>
+      },
     ],
   },
 ],
 };
-
-
-
 
 

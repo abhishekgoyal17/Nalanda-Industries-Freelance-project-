@@ -35,7 +35,7 @@ const AdvantagesCarousel = () => {
   };
 
   return (
-    <div className="max-w-[1200px] mx-auto mt-8 relative bg-gradient-to-l from-green-700 bg-accent p-4 rounded-lg">
+    <div className="max-w-[1200px] mx-auto mt-8 relative bg-gradient-to-r from-green-800 bg-accent p-4 rounded-lg">
       <h2 className="text-4xl font-bold mb-4 text-white text-center">Advantages</h2>
       <div className="overflow-hidden">
         <div className="flex items-center justify-center">

@@ -18,6 +18,9 @@ import Yashpoly5 from './assets/img/yashpoly-5.png';
 import Yashpoly6 from './assets/img/yashpoly-6.png';
 import Yashpoly7 from './assets/img/yashpoly-7.png';
 import Yashpoly8 from './assets/img/yashpoly-8.png';
+import NDoor1 from './assets/img/ndoor1.png';
+import NDoor2 from './assets/img/ndoor2.png';
+import NDoor3 from './assets/img/ndoor3.png';
 import SlidingWindowImg from './assets/img/products/sliding-window.jpg';
 import CornerglassImg from './assets/img/products/corner-glass-to-glass-windows.jpg';
 import BalconyGrillImg from './assets/img/products/balcony-windows-with-grill.jpg';
@@ -109,7 +112,7 @@ export const navigation = [
     dropdown:[
       {name:'Ekotimber',href:'/ekotimber'},
       {name:'Yashpoly',href:'/yashpoly-products'},
-      {name:'N-Decor',href:'wpc-doors'},
+      {name:'N-Decor',href:'/ndecor'},
     ],
   },
   {
@@ -205,9 +208,9 @@ export const features = {
     },
     {
       icon: <IoIosCheckmarkCircle />,
-      title: '""Excellence Guaranteed: Nalanda Industries - Yashpoly Supplier""',
+      title: 'Excellence Guaranteed: Nalanda Industries - Yashpoly Supplier',
       subtitle:
-        'At Nalanda Industries, we are committed to delivering top-notch quality and superior performance. Our Yashpoly products are crafted with precision and attention to detail,ensuring durability and reliability. ',
+        'We are committed to delivering top-notch quality and superior performance. Our Yashpoly products are crafted with precision and attention to detail,ensuring durability and reliability. ',
     },
   ],
   feature2: {
@@ -218,30 +221,69 @@ export const features = {
   },
 };
 
+
+export const nDoors={
+  nDoorImages: [
+    {
+      image: <NDoor1/>,
+     
+      
+    },
+    {
+      image: <NDoor2/>,
+      
+      
+    },
+    {
+      image: <NDoor3/>,
+      
+      
+    },
+  ],
+  title: 'Our n-decor Wooden Doors',
+  subtitle:'At Nalanda Industries, we take immense pride in presenting an extensive collection of premium wooden doors that redefine beauty, quality, and craftsmanship. Our wooden doors are not just entrances; they are statements of style and a reflection of your unique taste.',
+  items: [
+    {
+      icon: <IoIosCheckmarkCircle />,
+      title: 'Premium Materials',
+      subtitle:
+        'We source only the finest wood, ensuring durability and long-lasting beauty for your doors.',
+    },
+    {
+      icon: <IoIosCheckmarkCircle />,
+      title: 'Exquisite Designs',
+      subtitle:
+        'Our wooden doors are available in a variety of captivating designs, from classic to contemporary, ensuring the perfect match for your interior or exterior.',
+    },
+  ],
+  
+
+}
+
 export const newInStore = {
   title: 'We manufacture',
-  subtitle: 'At Nalanda Industries, we are committed to delivering top-notch quality and superior performance. Our products are crafted with precision and attention to detail,ensuring durability and reliability.Best quality WPC Doors with huge range of designs',
+  subtitle: 'At Nalanda Industries, we excel in delivering premium WPC, wooden, and PVC, uPVC doors. Crafted with precision, our products guarantee durability, reliability, and a touch of elegance for your spaces.',
   link: 'Visit',
   icon: <IoIosArrowRoundForward />,
   products: [
     {
-      name: 'wpc1',
+      
       image: <Wpc1 />,
     },
     {
-      name: 'wpc2',
+      
       image: <Wpc2 />,
     },
     {
-      name: 'wpc3',
+      
       image: <Wpc3 />,
     },
     {
-      name: 'wpc4',
+      
       image: <Wpc4/>,
     },
     {
-      name:'wpc5',
+    
       image:<Wpc5/>
     }
   ],

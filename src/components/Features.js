@@ -28,7 +28,7 @@ const Features = () => {
                 const { title, subtitle, icon } = item;
                 return (
                   <div className='flex mb-6 lg:last:mb-0' key={index}>
-                    <div className='text-2xl mr-4 lg:text-3xl'>{icon}</div>
+                    <div className='text-2xl mr-4 lg:text-3xl text-accent'>{icon}</div>
                     <div>
                       <h4 className='text-base lg:text-xl font-semibold mb-1'>{title}</h4>
                       <p>{subtitle}</p>

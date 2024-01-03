@@ -2,9 +2,10 @@ import React from 'react';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import NdecorLogo from '../assets/img/n-decor-logo.png';
+import NDecorHome from '../components/ndecor-home';
 
 
-const About = () => {
+const NDecorPage = () => {
 return (
     <div>
       <Header />
@@ -16,9 +17,10 @@ return (
           style={{ width: '280px', height: 'auto' }} // Adjust the width and height as needed
         />
       </div>
+      <NDecorHome/>
       <Footer/></div>
       
       );};
 
 
-      export default About;
+export default NDecorPage;

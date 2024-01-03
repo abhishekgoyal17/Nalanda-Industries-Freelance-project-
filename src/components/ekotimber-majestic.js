@@ -147,7 +147,7 @@ const EkotimberMajestic = () => {
          
         </div>
         <div className='text-center mt-8'>
-          <a href='https://www.google.com' target='_blank' rel='noopener noreferrer' className='bg-accent text-white py-2 px-6 rounded-full text-lg hover:bg-accent-hover'>
+          <a href='https://drive.google.com/file/d/1tJ_3VwrxAkqOQgJjs-tjX4RsCLn0LEN6/view?usp=sharing' target='_blank' rel='noopener noreferrer' className='bg-accent text-white py-2 px-6 rounded-full text-lg hover:bg-accent-hover'>
             Download full Catalogue
           </a>
         </div>
